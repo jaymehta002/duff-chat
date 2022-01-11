@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Duff chat</title>
+	<title>VibeGram</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel = "stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/f95973fea7.js" crossorigin="anonymous"></script>
 	<script>
 		var name = prompt("Please enter your name");
 	</script>
@@ -12,13 +13,15 @@
 <body>
     
     <div id="intro">
-      <h1>Duff chat		</h1>
+      <h1>VibeGram</h1>
+	  <button><a href="home">logout</a></button>
     </div>
     
     <ul id="messages"></ul>
     
     <form action="">
-      <input id="m" placeholder="Enter your message..." autocomplete="off" required /><button>Send</button>
+      <input id="m" placeholder="Enter your message..." autocomplete="off" required />
+	  <button><i class="fas fa-paper-plane"></i></button>
     </form>
 
     <script src="/socket.io/socket.io.js"></script>
